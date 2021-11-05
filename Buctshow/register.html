@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>注册</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" /> <!-- iPhone端页面全屏-->
+	<meta name="format-detection" content="telephone=no" /> <!-- 取消数字被识别为号码-->
+	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style1.css">
+	<style type="text/css">
+		#cfbt{
+			opacity: 0.5;
+			width: 17%;
+		    height: 4vh;
+		    border-radius: 2vh;
+		    border: none;
+		}
+		#cfbt:hover{
+			opacity: 0.8;
+		}
+		#cfm{
+			width: 57%;
+		}
+	</style>
+</head>
+<body>
+	<div style="padding: 0;" class="container-fluid">
+		<div id="salert"><p id="sal_ct"></p></div>
+		<div class="main-area">
+			<div class="color"></div>
+			<div class="color"></div>
+			<div class="color"></div>
+			<div class="color"></div>
+			<div class="pic-log">
+				<div class="log">
+					<div class="form">
+						<p>注册</p>
+						<form>
+							<div class="input-cont">
+								<input type="text" id="username" placeholder="用户名">
+							</div>
+							<div class="input-cont">
+								<input id="cfemail" type="email" id="email" placeholder="邮箱">
+							</div>
+							<div class="input-cont">
+								<input type="text" name="mailcf" placeholder="验证码" id="cfm">
+								<button type="button" onclick="send_mail('reg')" id="cfbt">获取验证码</button>
+							</div>
+							<div class="input-cont">
+								<input type="password" id="pwd" placeholder="密码">
+							</div>
+							<div class="input-cont">
+								<input type="password" id="confirmpwd" placeholder="确认密码">
+							</div>
+							<button type="button" class="button" onclick="register()">注册</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="JS/universaljs.js"></script>
+	<script src="JS/jquery.min.js"></script>
+</body>
+</html>
