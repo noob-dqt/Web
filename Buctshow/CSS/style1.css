@@ -1,0 +1,193 @@
+#salert{
+  background:#594954;
+  width: 60vh;
+  height: 30vh;
+  border-radius: 5vh;
+  border: solid white 1px;
+  opacity: 0.8;
+  position: absolute;
+  font-size: 4vh;
+  color: white;
+  text-align: center;
+  top: 35%;
+  left: 35%;
+  z-index: 999;
+  transition: 3.5s;
+  display: none;
+}
+
+#salert p{
+    margin-top: 10%;
+    vertical-align:middle;
+    display: inline-block;
+    text-align:left;
+}
+
+.main-area{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;/*相对视窗100%*/
+    background: linear-gradient(to bottom, #f1f4f9, #dff1ff);/*渐变*/
+}
+
+.color{
+    position: absolute;
+    filter: blur(150px);
+}
+.color:nth-child(1){
+    top: -50vh;
+    width: 100vh;
+    height: 150vh;
+    background: #6fa0c9;
+}
+ 
+.color:nth-child(2){
+    bottom: -50vh;
+    left: -10vh;
+    width: 150vh;
+    height: 100vh;
+    background: #77fe2b8c;
+}
+ 
+.color:nth-child(3){
+    bottom: 0;
+    right: 10vh;
+    width: 100vh;
+    height: 125vh;
+    background: #91b7bfba;
+}
+.color:nth-child(4){
+    top: 0;
+    left: 0;
+	width: 80vh;
+	height: 70vh;
+    background: #7d6f6b69;
+}
+
+.logo{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	animation: moving 20s linear infinite alternate;
+}
+
+.logo1{
+	position: absolute;
+	bottom: 0%;
+	left: 65%;
+	animation: moving-b 20s linear infinite alternate;
+}
+
+@keyframes moving {
+    50% {
+        transform: translate(100%,50%);
+    }
+    100%{
+        transform: translate(0%,100%);
+    }
+    
+}
+
+@keyframes moving-b {
+    50% {
+        transform: translate(-100%,-50%);
+    }
+    100% {
+        transform: translate(0%,-100%);
+    }
+    
+}
+
+.pic-log{
+	position: relative;
+}
+ 
+.log{
+	text-align: center;
+    position: relative;
+    width: 600px;
+    min-height: 500px;
+    background: rgba(255, 255, 255, 0.);
+    /*display: flex;*/
+    justify-content: center;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+}
+
+.form{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+}
+ 
+.form p {
+	letter-spacing: 5px;
+    position: relative;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.input-cont {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.input-cont input {
+    width: 75%;
+    padding: 2% 4%;
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #666666;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+ 
+.input-cont input::placeholder {
+    color: #666666;
+}
+
+.button{
+	width: 75%;
+    padding: 2% 4%;
+    margin-top: 5%;
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    background: #fff;
+    color: #666;
+    max-width: 100px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.reg{
+    margin-top: 2%;
+    letter-spacing: 1px;
+}
+
+.reg a{
+	font-size: 10px;
+    color: #666666;
+    font-weight: 600;
+}
+.reg a:hover{
+	color: red;
+}
