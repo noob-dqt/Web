@@ -1,0 +1,55 @@
+.right_box{
+    width: 100%;
+    height: 100%;
+}
+.right_box a{
+    display: block;
+}
+.highlight{
+    background-color: rgb(255 255 255 / 10%);
+}
+.cg_box{
+    width: 100%;
+    height: 0;
+    background-color: rgb(255 255 255 / 15%);
+    overflow: hidden;
+}
+.cg_box input{
+    outline: none;
+    border-radius: 1vh;
+    height: 4vh;
+    border: 1px wheat solid;
+}
+.cg_btn{
+    float: right;
+    outline: none;
+    height: 4vh;
+}
+.cg_btn_dep{
+    float: right;
+    outline: none;
+    height: 4vh;
+}
+.cg_infomation{
+    float: right;
+}
+.add_box{
+    width: 100%;
+    height: 0;
+    background-color: rgb(255 255 255 / 15%);
+    overflow: hidden;
+}
+.add_box input{
+    outline: none;
+    border-radius: 1vh;
+    height: 4vh;
+    border: 1px wheat solid;
+}
+.add_btn_dep{
+    float: right;
+    outline: none;
+    height: 4vh;
+}
+.delete_dep,.delete_emp{
+    float: right;
+}

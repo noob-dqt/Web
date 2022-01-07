@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #cddad8;
+}
+#salert{
+    background:#792861;
+    width: 60vh;
+    height: 30vh;
+    border-radius: 5vh;
+    border: solid white 1px;
+    opacity: 0.6;
+    position: absolute;
+    font-size: 4vh;
+    color: white;
+    text-align: center;
+    top: 25%;
+    left: 35%;
+    z-index: 999;
+    transition: 3.5s;
+    display: none;
+}
+
+#salert p{
+    margin-top: 20%;
+    vertical-align:middle;
+    display: inline-block;
+    text-align:left;
+}
+.mainbox{
+    overflow: hidden;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    width: 100%;
+    height: 100%;
+}
+.banner{
+    /* #ebe3e0; */
+    background-color: #cddad8;
+    width: 100%;
+    height: 8%;
+    border: 1px solid whitesmoke;
+}
+.logo{
+    margin-left: 15%;
+}
+.person_box{
+    overflow: hidden;
+    float: right;
+    height: 100%;
+    margin-right: 2%;
+}
+.headpart{
+    height: 100%;
+}
+.person_box:hover .personal_info{
+    display: block;
+}
+.personal_info{
+    transition: 0.5s;
+    position: absolute;
+    background-color: #cddad8;
+    right: 1.5vh;
+    width: 13vh;
+    border-radius: 2vh;
+    list-style: none;
+    text-align: center;
+    padding: 1vh;
+    display: none;
+}
+.personal_info li{
+    border: 1px white solid;
+    margin-top: 1%;
+    cursor: pointer;
+}
+.personal_info li:hover{
+    background-color: #ebe3e0;
+}
+.left_part{
+    background-color: #cddad8;
+    height: 92%;
+    width: 70%;
+    float: left;
+}
+.left_box{
+    width: 100%;
+    height: 100%;
+    background-color: #ebe3e0;
+    margin: auto;
+    box-shadow: 3vh 3vh 5vh rgba(58, 55, 55, 0.25);
+    border-radius: 1vh;
+    padding: 0.1px;
+}
+.sear_box{
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: -2%;
+}
+.sear_box input{
+    border: 0.5px #cddad8 solid;
+    border-radius: 0.5vh;
+    outline: none;
+}
+.se_ico{
+    margin-right: 2%;
+    cursor: pointer;
+}
+.reset_btn{
+    width: 6%;
+    height: 5%;
+    background-color: #e4dad6;
+    border: 1px #ebe3e0 solid;
+    border-radius: 1vh;
+    cursor: pointer;
+    display: inline-block;
+}
+.reset_btn:hover{
+    /* background-color: #337ab7; */
+    border: 1px #337ab7 solid;
+}
+.info_box{
+    width: 90%;
+    /* background-color: red; */
+    margin: auto;
+    margin-top: 5%;
+}
+.right_part{
+    /* border-radius: 5vh; */
+    overflow: hidden;
+    background-color: rgb(255 255 255 / 15%);
+    width: 30%;
+    height: 92%;
+    float: right;
+    text-align: center;
+}
+.r_bot{
+    border-radius: 2vh;
+    width: 50%;
+    height: 60%;
+    color: #444242;
+    margin: auto;
+    margin-top: 3%;
+    text-align: center;
+    border: 1px solid #f5f5f5;
+    box-shadow: -2.5vh -2.5vh 5vh rgba(58, 55, 55, 0.25);
+    transition: 0.5s;
+}
+.r_top{
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+}
+.r_ntc{
+    margin-top: 5%;
+    animation: notice 15s linear infinite;
+    color: #444242;
+    margin-left: 100%;
+    /* width: 100%; */
+    width: 127%;
+    height: 15%;
+    font-size: 3.0vh;
+}
+@keyframes notice
+{
+    0%   {margin-left: 100%;}
+    100% {margin-left: -125%;}
+}
+.login_btn{
+    float: right;
+    margin-right: 5%;
+    margin-top: 1%;
+}
+.pass_req{
+    float: right;
+}
+.dropdown{
+    float: left;
+    width: 5vh;
+    margin-top: 12.5%;
+    margin-left: 5%;
+}
+.dropdown li{
+    cursor: pointer;
+    z-index: 5;
+}
+.query_box{
+    width: 100%;
+    /* height: 10%; */
+    /* background-color: red; */
+}
+.query_box a{
+    display: block;
+    margin: 2% 0 0 5%;
+}
+.apply_box{
+    padding: 0.1px;
+    width: 100%;
+    height: 90%;
+    /* background-color: green; */
+    overflow: hidden;
+}
+.app_btn{
+    /* margin:5% 0 0 5% ; */
+    display: block;
+    /* float: right; */
+}
+
+
+#input_info_box{
+    overflow: hidden;
+    transition: 0.5s;
+    margin: auto;
+    margin-top: 3%;
+    width: 0;
+    height: 0;
+    border: 1px white solid;
+    opacity: 0;
+    border-radius: 2vh;
+    box-shadow: 1.5vh 1.5vh 3vh rgba(58, 55, 55, 0.25);
+}
+#input_info_box input{
+    display: block;
+    margin-left: 35%;
+}
+#input_info_box label{
+    margin-top: 3%;
+    margin-left: 20%;
+}
+#input_info_box textarea{
+    display: block;
+    margin-top: 3%;
+    margin-left: 35%;
+}
+#apply_btn{
+    margin-top: 3%;
+    margin-left: 45%;
+}
+
+.input_ntc_box{
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+    margin: auto;
+    margin-top: 5%;
+    width: 0;
+    height: 0;
+    border: 1px white solid;
+    opacity: 0;
+    border-radius: 2vh;
+    box-shadow: 1.5vh 1.5vh 3vh rgba(58, 55, 55, 0.25);
+}
+.input_ntc_box label{
+    font-size: 3vh;
+    margin-top: 10%;
+}
+.input_ntc_box textarea{
+    outline: #ebe3e0;
+    display: block;
+    border-radius: 1vh;
+    margin-top: 3%;
+    margin-left: 25%;
+}
+.pub_check_btn{
+    margin-top: 5%;
+}
+/******personal_rec part*******/
+.check_detail:hover{
+    cursor: pointer;
+    background-color: #b0bab8;
+}
+.reason_box{
+    width: 35%;
+    height: 50%;
+    border-radius: 2vh;
+    /* padding: 1vh; */
+    background-color: #faede8;
+    position: absolute;
+    box-shadow: 3vh 3vh 5vh rgba(58, 55, 55, 0.25);
+    top: 31%;
+    left: 18%;
+    font-size: 2.5vh;
+    opacity: 0.9;
+    display: none;
+    z-index: 5;
+    /* transition: 2.5s; */
+}
+.reason_box p{
+    margin-top: 3%;
+    margin-left: 3%;
+}
+.reason_box span{
+    float: right;
+}
+.reason_box span:hover{
+    cursor: pointer;
+    color: red;
+}
+.ret_btn{
+    /* display: inline-block; */
+    opacity: 0.7;
+    background-color: #ebe3e0;
+    
+}
+.ret_btn:hover{
+    opacity: 1;
+}
+/******************************/
+
+/*********approve part*****************/
+.id_num{
+    display: none;
+}
+/*************************************/
+/**count part*******/
+.chart_box{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    /* width: 40%; */
+    /* height: 50%; */
+    display: none;
+    /* background-color: red; */
+}
+/*******************/
+.the_num{
+    display: none;
+}
+#salert{
+    background:#792861;
+    width: 60vh;
+    height: 30vh;
+    border-radius: 5vh;
+    border: solid white 1px;
+    opacity: 0.6;
+    position: absolute;
+    font-size: 4vh;
+    color: white;
+    text-align: center;
+    top: 25%;
+    left: 35%;
+    z-index: 999;
+    transition: 3.5s;
+    display: none;
+}

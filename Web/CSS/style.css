@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: url("../images/log.jpg") no-repeat;
+    background-size: cover;
+    /* background-color:#3f6560; */
+    height: 100%;
+    width: 100%;
+}
+#salert{
+    background:#792861;
+    width: 60vh;
+    height: 30vh;
+    border-radius: 5vh;
+    border: solid white 1px;
+    opacity: 0.6;
+    position: absolute;
+    font-size: 4vh;
+    color: white;
+    text-align: center;
+    top: 25%;
+    left: 35%;
+    z-index: 999;
+    transition: 3.5s;
+    display: none;
+}
+
+#salert p{
+    margin-top: 20%;
+    vertical-align:middle;
+    display: inline-block;
+    text-align:left;
+}
+.mainBox{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.mainBox h1,h2{
+    margin-top: 3vh;
+}
+.mainBox{
+    color: white;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.login_Box{
+    overflow: hidden;
+    transition: 0.5s;
+    /* border-radius: 5vh; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.23%;
+    border-radius: 0.8vh;
+    /* background-color: red; */
+    width: 30%;
+    height: 55%;
+    
+}
+.login_Box:hover{
+    box-shadow: 1vh 1vh 5vh rgba(243, 243, 238, 0.25);
+}
+.login_Box p:nth-child(2){
+    /* display: inline-block; */
+    margin-top: 15%;
+    font-size: 3vh;
+}
+.login_Box p:nth-child(4){
+    /* display: inline; */
+    display: block;
+    margin-top: 3.5vh;
+    font-size: 3vh;
+}
+.login_Box input {
+    opacity: 0.5;
+    background-color: white;
+    color: rgb(61, 46, 75);
+    transition: linear 0.5s;
+    border: 2px solid rgb(190, 165, 165);
+    border-radius: 1vh;
+}
+.login_Box input:focus{
+    outline:none;
+}
+#userid{
+    margin-left: 25%;
+    display: inline-block;
+    width: 40%;
+    height: 10%;
+    /* background-color: red; */
+}
+#userid:hover{
+    width: 60%;
+    margin-left: 0;
+}
+#password:hover{
+    width: 60%;
+    margin-left: 0;
+}
+#password{
+    margin-left: 25%;
+    display: inline-block;
+    width: 40%;
+    height: 10%;
+    /* background-color: red; */
+}
+.mask_Box{
+    z-index: -999;
+    width: 35%;
+    height: 60%;
+    top: 9%;
+    left: 32.5%;
+    border-radius: 5vh;
+    position: absolute;
+    background-color: white;
+    opacity: 0.1;
+    /* transition: 0.5s; */
+}
+#log_btn{
+    background-color: white;
+    display: block;
+    font-size: 2.2vh;
+    border: 1px solid rgb(146, 95, 95);
+    border-radius: 1vh;
+    margin:10% 0 0 38%;
+    width: 12%;
+    height: 9%;
+    opacity: 0.4;
+    transition: 0.5s;
+}
+#log_btn:hover{
+    opacity: 1;
+}
+.login_Box a{
+    color: white;
+    font-size: 2vh;
+    transition: 0.3s;
+}
+.login_Box a:hover{
+    color: purple;
+}
